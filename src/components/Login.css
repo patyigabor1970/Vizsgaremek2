@@ -1,0 +1,71 @@
+
+@media (max-width: 640px) {
+    .hero-content {
+      flex-direction: column-reverse;
+    }
+  
+    .card {
+      margin-top: 2rem;
+    }
+  
+    .label-text {
+      font-size: 1.5rem;
+    }
+  
+    .input {
+      font-size: 1.25rem;
+    }
+  
+    .btn {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .hero-content {
+      flex-direction: column-reverse;
+    }
+  
+    .card {
+      margin-top: 2rem;
+      max-width: 90%;
+    }
+  
+    .label-text {
+      font-size: 2rem;
+    }
+  
+    .input {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .hero-content {
+      flex-direction: row-reverse;
+    }
+  
+    .card {
+      margin-left: 2rem;
+      max-width: 40%;
+    }
+  
+    .label-text {
+      font-size: 3rem;
+    }
+  
+    .input {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      font-size: 3rem;
+    }
+  }
+  

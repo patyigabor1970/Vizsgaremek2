@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import TrainerCard from "./TrainerCard";
+import {Link} from 'react-router-dom';
 
 
 function Trainers() {
@@ -20,6 +21,13 @@ function Trainers() {
       {trenerek.map((elem, index) => (
         <TrainerCard key={index} elem={elem} />))}
       </div>
+      <Link to="/">
+            <button
+              className="bg-blue-600 hover:bg-black text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline items-center"
+              type="button">
+              Vissza a főoldalra
+            </button>
+          </Link>
     </div>
   );
 }

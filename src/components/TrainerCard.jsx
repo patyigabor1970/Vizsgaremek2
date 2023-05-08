@@ -1,7 +1,18 @@
 import React from "react";
 import "./TrainerCard.css";
+import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 function TrainerCard({ elem }) {
+  
+  const navigate=useNavigate();
+
+  const handleButtonClick = (e) => {
+    navigate(e.target.value);
+    }
+  
+  
+  
   return (
     <div>
       <div className="flip-card">
@@ -17,7 +28,7 @@ function TrainerCard({ elem }) {
             <p className="p">
               <small className="p">{elem.origin.name}</small>
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <Link to="/training"><button className="btn btn-primary" id="training" value='/training'onClick={(e)=> handleButtonClick(e)}>Tovább a jelentkezéshez</button></Link>
           </div>
         </div>
       </div>

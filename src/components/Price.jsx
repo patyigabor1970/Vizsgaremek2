@@ -1,36 +1,63 @@
-import {useState,useEffect} from "react";
+import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom';
 import "./PriceStyle.css";
 import Table from "./Table";
 
-
 function Price() {
-  const [price, setPrice]=useState([]);
-  const [page]=useState(1);
+  const [price, setPrice] = useState([]);
+  const [page] = useState(1);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
-    .then((result) => result.json())
-    .then(adatok => setPrice(adatok.results));
-          
-  },[page]);
-  
+      .then((result) => result.json())
+      .then((adatok) => setPrice(adatok.results));
+  }, [page]);
+
   return (
     <div id="bg">
       <h1 id="h1">ÁRAINK</h1>
       <div>
-       <table className="table w-full text-white text-justify font-bold border border-slate-400 md:table-fixed bg-red-600"> 
-
-       <tr>
-              <th className="border border-slate-300">ID</th>
-              <th className="border border-slate-300">TÍPUS</th>
-              <th className="border border-slate-300">ÁR</th>
-              <th className="border border-slate-300">LEÍRÁS</th>
-        </tr>
-        
-        </table>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 md:table-fixed">
+            <thead className="text-xl text-white uppercase bg-black dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th scope="col" class="px-6 py-3">
+                  ID
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  TÍPUS
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  LEÍRÁS
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  MENNYISÉG
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  ÁR
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Action
+                </th>
+              </tr>
+            </thead>
+          </table>
         </div>
-       {price.map((elem,index) => (<Table key={index} elem={elem}/>))}
-      
+      </div>
+      {price.map((elem, index) => (
+        <Table key={index} elem={elem} />
+      ))}
+
+    <div>
+    <Link to="/">
+            <button
+              className="bg-blue-600 hover:bg-black text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline items-center"
+              type="button">
+              Vissza a főoldalra
+            </button>
+          </Link>
+    </div>
+    
     </div>
   );
 }

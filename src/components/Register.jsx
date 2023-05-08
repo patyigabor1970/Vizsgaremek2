@@ -1,7 +1,8 @@
-/*import {useState,useContext} from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useState} from 'react';
+/*import {useNavigate} from 'react-router-dom';
 import UserContext from './context/UserContext';
-import {toast} from 'react-toastify';*/
+import {toast} from 'react-toastify';
+import {useNavigate} from 'reac-router-dom';*/
 
 function Register() {
   /*const navigate=useNavigate();
@@ -43,12 +44,15 @@ function Register() {
         })
         //.catch(err=>toast.error(err,{position: toast.POSITION.BOTTOM_RIGHT}))
         .catch(alert(error));
-    }
-
-    const onSubmit=(e)=>{
-        e.preventDefault();
-        kuldes(formData);
     }*/
+
+const [succes,setSucces]=useState(false);
+
+const onSubmit=(e)=>{
+  e.preventDefault();
+  //kuldes(formData);
+  setSucces(true);
+}
 
   return (
     <div className="hero max-h-screen bg-red-600">
@@ -106,7 +110,8 @@ function Register() {
               </form>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-black">Elküld</button>
+              <button className="btn btn-black" onClick={(e)=> onSubmit(e)}>Elküld</button>
+              {succes && <p className="text-green-500 mt-4">Sikeres regisztráció!</p>}
             </div>
           </div>
         </div>
@@ -125,16 +130,6 @@ function Register() {
               </a>
             </label>
           </p>
-        </div>
-        <div>
-          <div className="flex justify-center items-center">
-            <div>
-              <img
-                src="src/images/about.jpg"
-                className="max-w-sm rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>

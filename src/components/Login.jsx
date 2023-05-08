@@ -1,8 +1,10 @@
-//import { useState, useContext } from 'react';
+import { useState } from 'react';
+//import { useContext } from 'react';
 //import { useNavigate } from 'react-router-dom';
 //import UserContext from './context/UserContext';
 //import {toast} from 'react-toastify';
-import Register from "./Register";
+//import Register from "./Register";
+import './Login.css';
 
 function Login() {
   /*const navigate = useNavigate();
@@ -42,13 +44,15 @@ const kuldes=(adat)=>{
   //.catch(err=>toast.error(token.message,{position: toast.POSITION.BOTTOM_RIGHT}));
   .catch(alert(err));
 
-}
+}*/
+const [succes,setSucces]=useState(false);
 
 const onSubmit=(e)=>{
   e.preventDefault();
-  kuldes(formData);
+  //kuldes(formData);
+  setSucces(true);
+}
 
-}*/
 
   return (
     <div className="hero max-h-screen bg-red-600">
@@ -59,7 +63,16 @@ const onSubmit=(e)=>{
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
-          </p>
+          
+          <label className="label">
+                <a
+                  href="Register"
+                  className="label-text-alt link link-hover font-bold text-xl"
+                >
+                  Még nem regisztráltál? Itt megteheted.
+                </a>
+              </label>
+              </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
@@ -83,18 +96,12 @@ const onSubmit=(e)=>{
                 placeholder="admin1234"
                 className="input input-bordered"
               />
-              <label className="label">
-                <a
-                  href="Register"
-                  className="label-text-alt link link-hover font-bold text-xl"
-                >
-                  Még nem regisztráltál? Itt megteheted.
-                </a>
-              </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-black">Elküld</button>
+              <button className="btn btn-black" onClick={(e)=> onSubmit(e)} >Elküld</button>
+              {succes && <p className="text-green-500 mt-4">Sikeres bejelentkezés!</p>}
             </div>
+            
           </div>
         </div>
       </div>

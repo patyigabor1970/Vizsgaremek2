@@ -109,6 +109,41 @@ transition: 0.3s ease-in-out;
    top: 0;
     }
  
-
+    @media screen and (max-width: 1024px) {
+      nav {
+        padding: 10px 40px;
+        height: 40px;
+      }
+      #navbar {
+        top: 60px;
+        right: -200px;
+        width: 200px;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      nav {
+        padding: 10px 20px;
+        height: 40px;
+      }
+      #navbar {
+        top: 60px;
+        right: -150px;
+        width: 150px;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      nav {
+        padding: 10px 10px;
+        height: 30px;
+      }
+      #navbar {
+        top: 60px;
+        right: -100px;
+        width: 100px;
+      }
+    }
+    
 
 
