@@ -64,6 +64,11 @@ class Navbar extends Component {
                 REGISZTRÁCIÓ
                </Link>
               </li>
+              <li id="li">
+               <Link to="/trainerdatas" id="link">
+                EDZŐKNEK
+               </Link>
+              </li>
               
             </ul>
           </div>

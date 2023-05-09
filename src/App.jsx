@@ -10,6 +10,8 @@ import Price from "./components/Price";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Load from "./components/Load";
+import Lessondata from "./components/Lessondata";
+import Trainerdatas from "./components/Trainerdatas";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
          <Route path='/login' element={<Login />}/>
          <Route path='/register' element={<Register />}/>
          <Route path='/load' element={<Load />}/>
+         <Route path='/lessondata' element={<Lessondata />}/>
+         <Route path='/trainerdatas' element={<Trainerdatas />}/>
         
         </Routes>
       </Router>

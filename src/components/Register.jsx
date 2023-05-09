@@ -10,10 +10,10 @@ function Register() {
 
     let formObj={
         username:"",
+        phone:"",
+        adress:"",
         email:"",
-        password:"",
-        passwordIsmet:"",
-        age:0
+        password:""
     }
 
     const [formData,setFormData]=useState(formObj);
@@ -35,7 +35,7 @@ function Register() {
                 //toast.success('Sikeres regisztráció!',{position: toast.POSITION.BOTTOM_RIGHT})
                 alert("Sikeres regisztráció!");
                 update();
-                navigate('/');
+                navigate('/login');
                 
             } else {
                 //toast.error(token.message,{position: toast.POSITION.BOTTOM_RIGHT});
@@ -117,10 +117,7 @@ const onSubmit=(e)=>{
         </div>
         <div>
           <h1 className="text-5xl font-bold">REGISZTRÁCIÓ</h1>
-          <p className="py-6 text-justify">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <p>
             <label className="label">
               <a
                 href="Login"

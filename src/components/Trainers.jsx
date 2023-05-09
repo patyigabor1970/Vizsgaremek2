@@ -6,13 +6,12 @@ import {Link} from 'react-router-dom';
 function Trainers() {
   const [trenerek, setTrenerek] = useState([]);
   const [page] = useState(1); 
+  
   useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
-      .then((result) => result.json())
+      .then((res) => res.json())
       .then((adatok) => setTrenerek(adatok.results));
   },[page]);
-
-  
 
   return (
     <div className="bg-red-600">

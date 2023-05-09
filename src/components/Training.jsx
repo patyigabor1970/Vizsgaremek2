@@ -21,14 +21,15 @@ function Training() {
           />
           <div>
             <h1 className="text-5xl font-bold text-white">Spinning</h1>
-            <p className="py-6 text-white text-justify">
+            <p className="py-6 text-5xl font-bold text-white text-justify">
               A spinning az egyik legkiválóbb kardió edzés, mely egyszerre
               fejleszti a testet és a lelket, a mentális képességeket és az
               állóképességet is. Ez a mozgásforma méltán népszerű, mára már
               filozófiává, életformává nőtte ki magát. A legjobb, hogy kortól és
               nemtől függetlenül bárki űzheti.
+              Az órára jelentkezéshez be kell jelentkezned!
             </p>
-            <Link to="/load" state={{ name: "Spinning", short: "spinning" }}>
+            <Link to="/load" state={{ name: "SPINING", short: "spinning" }}>
               <button
                 className="btn btn-primary hover:bg-black"
                 id="load"
@@ -50,13 +51,14 @@ function Training() {
           />
           <div>
             <h1 className="text-5xl font-bold text-white">Aerobik</h1>
-            <p className="py-6 text-white text-justify">
+            <p className="py-6 text-5xl font-bold text-white text-justify">
               Az aerobik az aerob szóból származik. Definícióját tekintve
               jelentése: „az oxigén jelenléte”. Minden gyakorlatot, ami nagy
               izomcsoportok megmozgatását, ritmust és ismétléseket igényel,
               ennek – vagyis oxigént igénylőnek – nevezhetünk.
+              Az órára jelentkezéshez be kell jelentkezned!
             </p>
-            <Link to="/load" state={{ name: "Aerobik", short: "arobic" }}>
+            <Link to="/load" state={{ name: "AEROBIK", short: "arobic" }}>
               <button
                 className="btn btn-primary hover:bg-red-600"
                 id="load"
@@ -77,7 +79,7 @@ function Training() {
           />
           <div>
             <h1 className="text-5xl font-bold text-white">CrossFit</h1>
-            <p className="py-6 text-white text-justify">
+            <p className="py-6 text-5xl font-bold text-white text-justify">
               A CrossFit a funkcionális edzés alapjaira épül, és annak
               eszköztárát alkalmazza a programjai megalkotása során, egyaránt
               merítve a súlyemelés, erőemelés, gimnasztika, állóképességi
@@ -87,8 +89,9 @@ function Training() {
               tárcsák, GHD pad, concept2 ergométer, airbike, kettlebell,
               freerun- és stairmaster hiit futópad áll rendelkezésedre, hogy
               fejleszd kondícionális képességeidet.
+              Az órára jelentkezéshez be kell jelentkezned!
             </p>
-            <Link to="/load" state={{ name: "CrossFit", short: "crossfit" }}>
+            <Link to="/load" state={{ name: "CROSSFIT", short: "crossfit" }}>
               <button
                 className="btn btn-primary hover:bg-black"
                 id="load"

@@ -62,8 +62,7 @@ Edzőtermünkben Hoist, Life Fitness, Hammer Strenght, Panatta gépek széles v�
           <div>
             <h1 className="text-5xl font-bold text-white">Árak</h1>
             <p className="py-6 text-5xl font-bold text-white text-justify">
-            Ha szeretnéd hatékonyan és biztonságosan elérni céljaidat válassz magasan képzett személyi edzőink közül. 
-            Edzőink a edzés időtartama alatt csak rád figyelnek, hogy élmény legyen a közös edzés. Vedd fel a kapcsolatot az általad választott edzővel.
+            Az Ön igényeinakek megfelelő heti, havi bérletek, egy és több alkalmas órajegyek akár ajándékba is.
             </p>
             <button className="btn btn-primary" id="price" value='/price'onClick={(e)=> handleButtonClick(e)}>Tovább az árakhoz</button>
           </div>

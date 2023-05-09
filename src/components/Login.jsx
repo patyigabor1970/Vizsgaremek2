@@ -5,6 +5,7 @@ import { useState } from 'react';
 //import {toast} from 'react-toastify';
 //import Register from "./Register";
 import './Login.css';
+import {Link} from 'react-router-dom';
 
 function Login() {
   /*const navigate = useNavigate();
@@ -35,10 +36,12 @@ const kuldes=(adat)=>{
       //toast.success('Sikeres belépés!',{position: toast.POSITION.BOTTOM_RIGHT});
       alert('Sikeres belépés!');
       update();
-      navigate('/');
+      navigate('/load');
     } else {
       //toast.error(token.message,{position: toast.POSITION.BOTTOM_RIGHT});
       alert(token.message);
+      update();
+      navigate('/login')
     }
   })
   //.catch(err=>toast.error(token.message,{position: toast.POSITION.BOTTOM_RIGHT}));
@@ -55,15 +58,12 @@ const onSubmit=(e)=>{
 
 
   return (
+    <div>
     <div className="hero max-h-screen bg-red-600">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">BEJELENTKEZÉS</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          
+          <p>
           <label className="label">
                 <a
                   href="Register"
@@ -101,9 +101,19 @@ const onSubmit=(e)=>{
               <button className="btn btn-black" onClick={(e)=> onSubmit(e)} >Elküld</button>
               {succes && <p className="text-green-500 mt-4">Sikeres bejelentkezés!</p>}
             </div>
-            
-          </div>
+          </div> 
         </div>
+      </div>
+    </div>
+    <div className="bg-black">
+        <Link to="/">
+          <button
+            className="bg-blue-600 hover:bg-red-500 text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline items-center"
+            type="button"
+          >
+            Vissza a főoldalra
+          </button>
+        </Link>
       </div>
     </div>
   );
