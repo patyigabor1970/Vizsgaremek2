@@ -5,7 +5,7 @@ function GuestDatas() {
   
     const guest ={
         
-        nev: 'Kovács Péter',
+      nev: 'Kovács Péter',
         kep: './src/images/arakkep.jpg',
         cim:'5600 Békéscsaba Kazinczy utca 8.',
         email:'kovacspeter@gmail.com',

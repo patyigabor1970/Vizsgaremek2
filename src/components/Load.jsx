@@ -30,12 +30,12 @@ function Load() {
       .catch((err) => alert(err));
   }, [page]);
 
-  const getActivity = (trainer) => {
-    fetch(`http://......./${trainer}`)
-      .then((res) => res.json())
-      .then((activity = setActivity(activity.results)))
-      .catch((err) => alert(err));
-  };
+ // const getActivity = (trainer) => {
+   // fetch(`http://......./${trainer}`)
+     // .then((res) => res.json())
+     // .then((activity = setActivity(activity.results)))
+    //  .catch((err) => alert(err));
+ // };
 
   return (
     <div className="bg-red-600 p-6 shadow-2xl">

@@ -5,7 +5,7 @@ function TrainerData(props) {
 
   return (
     <div>
-      <div className="hero max-h-screen bg-red-600">
+      <div className="hero max-h-screen bg-red-600 max-height-80vh overflow-y-auto">
         <div className="hero-content flex-col">
           <div className="w-full max-w bg-white border border-gray-600 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex justify-end px-8 pt-4"></div>

@@ -4,10 +4,10 @@ import React, {useState} from 'react'
 function GuestData(props) {
   
   const [selectedIdopont, setSelectedIdopont] = useState(null);
-  
-  
+ 
   return (
-    <div>
+    
+  <div>
     <div className="hero max-h-screen bg-red-600">
       <div className="hero-content flex-col">
         <div className="w-full max-w bg-white border border-gray-600 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -27,6 +27,7 @@ function GuestData(props) {
             <p>Email: {props.email}</p>
             <p>Mobil: {props.mobil}</p>
             <div>
+           
               <p className="text-xl text-center font-bold">Az Ön órái:</p>
               <select
                 className="bg-gray-50 text-xl font-bold border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 
@@ -52,12 +53,10 @@ function GuestData(props) {
                 <>
                   <p className="text-xl text-center font-bold">Óráim:</p>
                   <ul className="bg-white border-black border mt-2 rounded-lg p-2 text-xl font-bold">
-                    {props.orak
-                      .find((ora) => ora.idopont === selectedIdopont)
-                      .foglalt.map((foglalt) => (
+                    {props.orak.find((ora) => ora.idopont === selectedIdopont).foglalt.map((foglalt) => (
                         <div>
-                          <div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                            <div class="flex items-center justify-between mb-4"></div>
+                          <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div className="flex items-center justify-between mb-4"></div>
                             <div className="flow-root">
                               <ul
                                 role="list"

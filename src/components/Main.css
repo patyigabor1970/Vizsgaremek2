@@ -138,3 +138,14 @@
     display: flex;
   }
   
+  .hero {
+    max-height: 80vh; /* vagy bármelyik százalék, amelyik jól működik */
+    overflow-y: auto; /* scrollbár megjelenítése, ha szükséges */
+  }
+
+  .w-full.max-w {
+    max-height: calc(80vh - 100px); /* a felső és alsó paddingek magassága */
+    overflow-y: auto; /* scrollbár megjelenítése, ha szükséges */
+  }
+  
+ 
