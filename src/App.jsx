@@ -10,8 +10,8 @@ import Price from "./components/Price";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Load from "./components/Load";
-import Lessondata from "./components/Lessondata";
-import Trainerdatas from "./components/Trainerdatas";
+import TrainerDatas from "./components/TrainerDatas";
+import GuestDatas from "./components/GuestDatas";
 
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
          <Route path='/login' element={<Login />}/>
          <Route path='/register' element={<Register />}/>
          <Route path='/load' element={<Load />}/>
-         <Route path='/lessondata' element={<Lessondata />}/>
-         <Route path='/trainerdatas' element={<Trainerdatas />}/>
+         <Route path='/trainerdatas' element={<TrainerDatas />}/>
+         <Route path='/guestdatas' element={<GuestDatas />}/>
         
         </Routes>
       </Router>

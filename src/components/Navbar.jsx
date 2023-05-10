@@ -69,7 +69,11 @@ class Navbar extends Component {
                 EDZŐKNEK
                </Link>
               </li>
-              
+              <li id="li">
+               <Link to="/guestdatas" id="link">
+                VENDÉGEINKNEK
+               </Link>
+              </li>
             </ul>
           </div>
           <div id="mobile" onClick={this.handleClick}>

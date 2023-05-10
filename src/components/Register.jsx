@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 /*import {useNavigate} from 'react-router-dom';
 import UserContext from './context/UserContext';
 import {toast} from 'react-toastify';
@@ -55,6 +56,7 @@ const onSubmit=(e)=>{
 }
 
   return (
+   <div>
     <div className="hero max-h-screen bg-red-600">
       <div className="hero-content flex-col lg:flex-row">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -129,7 +131,19 @@ const onSubmit=(e)=>{
           </p>
         </div>
       </div>
+      
     </div>
+    <div className="bg-black">
+        <Link to="/">
+          <button
+            className="bg-blue-600 hover:bg-red-500 text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline items-center"
+            type="button"
+          >
+            Vissza a főoldalra
+          </button>
+        </Link>
+      </div>
+    </div> 
   );
 }
 

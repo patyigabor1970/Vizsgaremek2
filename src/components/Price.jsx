@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
 import "./PriceStyle.css";
-import Table from "./Table";
+import PriceTable from "./PriceTable";
 
 function Price() {
   const [price, setPrice] = useState([]);
@@ -45,7 +45,7 @@ function Price() {
         </div>
       </div>
       {price.map((elem, index) => (
-        <Table key={index} elem={elem} />
+        <PriceTable key={index} elem={elem} />
       ))}
 
     <div>

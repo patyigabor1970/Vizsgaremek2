@@ -37,7 +37,7 @@ Edzőtermünkben Hoist, Life Fitness, Hammer Strenght, Panatta gépek széles v�
             Edzőink a edzés időtartama alatt csak rád figyelnek, hogy élmény legyen a közös edzés. Vedd fel a kapcsolatot az általad választott edzővel.
             </p>
             
-            <button className="btn btn-primary" id="trainers" value='/trainers'onClick={(e)=> handleButtonClick(e)}>Tovább az edzőkhöz</button>
+            <button className="btn btn-primary hover:bg-red-600" id="trainers" value='/trainers'onClick={(e)=> handleButtonClick(e)}>Tovább az edzőkhöz</button>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ Edzőtermünkben Hoist, Life Fitness, Hammer Strenght, Panatta gépek széles v�
             Ha szereted a CrossFit, spinning, aerobic edzések változatosságát, intenzitását akkor nálunk megvan a lehetőséged, hogy kihozd magadból a maximumot. 
             
             </p>
-            <button className="btn btn-primary" id="trainig" value='/training'onClick={(e)=> handleButtonClick(e)}>Tovább a szolgáltatásokhoz</button>
+            <button className="btn btn-primary hover:bg-black" id="trainig" value='/training'onClick={(e)=> handleButtonClick(e)}>Tovább a szolgáltatásokhoz</button>
 
           </div>
       </div>
@@ -64,7 +64,7 @@ Edzőtermünkben Hoist, Life Fitness, Hammer Strenght, Panatta gépek széles v�
             <p className="py-6 text-5xl font-bold text-white text-justify">
             Az Ön igényeinakek megfelelő heti, havi bérletek, egy és több alkalmas órajegyek akár ajándékba is.
             </p>
-            <button className="btn btn-primary" id="price" value='/price'onClick={(e)=> handleButtonClick(e)}>Tovább az árakhoz</button>
+            <button className="btn btn-primary hover:bg-red-600" id="price" value='/price'onClick={(e)=> handleButtonClick(e)}>Tovább az árakhoz</button>
           </div>
         </div>
       </div>

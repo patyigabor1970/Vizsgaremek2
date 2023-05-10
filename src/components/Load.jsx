@@ -75,7 +75,7 @@ function Load() {
                     Válasszon az időpontok közül!
                   </option>
                   {activity.map((activity, i) => (
-                    <option key={i} value={trainer.name}>
+                    <option key={i} value={activity.name}>
                       {trainer.activity}
                     </option>
                   ))}
