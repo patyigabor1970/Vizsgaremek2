@@ -20,14 +20,14 @@ function Training() {
             className="max-w-lg rounded-lg shadow-2xl border-8 border-black"
           />
           <div>
-            <h1 className="text-5xl font-bold text-white">Spinning</h1>
-            <p className="py-6 text-5xl font-bold text-white text-justify">
+            <h1 className="text-5xl font-bold text-white" >Spinning</h1>
+            <p className="py-6  text-2xl font-bold text-white text-justify">
               A spinning az egyik legkiválóbb kardió edzés, mely egyszerre
               fejleszti a testet és a lelket, a mentális képességeket és az
               állóképességet is. Ez a mozgásforma méltán népszerű, mára már
               filozófiává, életformává nőtte ki magát. A legjobb, hogy kortól és
               nemtől függetlenül bárki űzheti.
-              Az órára jelentkezéshez be kell jelentkezned!
+              Az időpontfoglaláshoz előzetesen be kell <a href="Login" className="text-2xl font-bold text-black">jelentkezned!</a>
             </p>
             <Link to="/load" state={{ name: "SPINING", short: "spinning" }}>
               <button
@@ -36,7 +36,7 @@ function Training() {
                 value="/load"
                 onClick={(e) => handleButtonClick(e)}
               >
-                Jelentkezés
+                Foglalás
               </button>
             </Link>
           </div>
@@ -51,12 +51,12 @@ function Training() {
           />
           <div>
             <h1 className="text-5xl font-bold text-white">Aerobik</h1>
-            <p className="py-6 text-5xl font-bold text-white text-justify">
+            <p className="py-6 text-2xl font-bold text-white text-justify">
               Az aerobik az aerob szóból származik. Definícióját tekintve
               jelentése: „az oxigén jelenléte”. Minden gyakorlatot, ami nagy
               izomcsoportok megmozgatását, ritmust és ismétléseket igényel,
               ennek – vagyis oxigént igénylőnek – nevezhetünk.
-              Az órára jelentkezéshez be kell jelentkezned!
+              Az időpontfoglaláshoz előzetesen be kell <a href="Login" className="text-2xl font-bold text-red-600">jelentkezned!</a>
             </p>
             <Link to="/load" state={{ name: "AEROBIK", short: "arobic" }}>
               <button
@@ -65,7 +65,7 @@ function Training() {
                 value="/load"
                 onClick={(e) => handleButtonClick(e)}
               >
-                Jelentkezés
+                Foglalás
               </button>
             </Link>
           </div>
@@ -89,7 +89,7 @@ function Training() {
               tárcsák, GHD pad, concept2 ergométer, airbike, kettlebell,
               freerun- és stairmaster hiit futópad áll rendelkezésedre, hogy
               fejleszd kondícionális képességeidet.
-              Az órára jelentkezéshez be kell jelentkezned!
+              Az időpontfoglaláshoz előzetesen be kell <a href="Login" className="text-2xl font-bold text-black">jelentkezned!</a>
             </p>
             <Link to="/load" state={{ name: "CROSSFIT", short: "crossfit" }}>
               <button
@@ -98,7 +98,7 @@ function Training() {
                 value="/load"
                 onClick={(e) => handleButtonClick(e)}
               >
-                Jelentkezés
+                Foglalás
               </button>
             </Link>
           </div>
